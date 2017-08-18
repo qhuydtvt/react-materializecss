@@ -1,1 +1,13 @@
-/* YOUR CUSTOM STYLES */
+.nav-search-input {
+  border-bottom: none !important;
+  padding-left: 12px !important;
+}
+
+.nav-wrapper {
+  padding-left: 10px;
+  padding-right: 100px;
+}
+
+.search-icon {
+  width: 32px !important;
+}

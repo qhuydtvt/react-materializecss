@@ -51,7 +51,7 @@ class Home extends Component {
                 <td>{record.className}</td>
                 <td>{record.role}</td>
                 <td>
-                    <i className="material-icons red-text right">delete</i>
+                    <i data-tooltip="Click để xoá"  className="tooltipped material-icons red-text right">delete</i>
                 </td>
               </tr>
             )
@@ -67,8 +67,10 @@ class Home extends Component {
     }
 
     return (
-      <div className="row">
-        {this.props.items.map((item) => this.renderItem(item))}
+      <div className="container">
+        <div className="row">
+          {this.props.items.map((item) => this.renderItem(item))}
+        </div>
       </div>
     );
   }
