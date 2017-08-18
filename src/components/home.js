@@ -9,12 +9,12 @@ class Home extends Component {
         <div className="card">
           <div className="card-image">
             <img className="responsive-img" src={item.image} alt={item.name} />
-            <a className="btn-floating halfway-fab waves-effect waves-light red" >
+            <a className="btn-floating btn-large halfway-fab waves-effect waves-light red" >
               <i className="material-icons item-action">fingerprint</i>
             </a>
           </div>
 
-          <div className="card-content activator">
+          <div className="card-content">
             <span className="card-title" >{item.name}</span>
           </div>
 
@@ -46,7 +46,7 @@ class Home extends Component {
         <tbody>
           {records.map((record) => {
             return (
-              <tr>
+              <tr key={record.className}>
                 <td>{record.className}</td>
                 <td>{record.role}</td>
               </tr>

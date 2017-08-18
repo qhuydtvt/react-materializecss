@@ -56,7 +56,7 @@ export default function(state = [], action) {
       },
       {
         name: "Nguyễn Quang Huy",
-        image: "https://source.unsplash.com/random/600x400",
+        image: "https://source.unsplash.com/random/150x100",
         records: [
           {
             className: "C4E12",
@@ -73,7 +73,7 @@ export default function(state = [], action) {
         ]
       },
       {
-        name: "Smart printer",
+        name: "Đặng Nguyễn Phương Trang",
         image: "https://source.unsplash.com/user/erondu/300x200",
         records: [
           {
