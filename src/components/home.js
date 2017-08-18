@@ -41,6 +41,7 @@ class Home extends Component {
           <tr>
             <th>Lớp</th>
             <th>Vai trò</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +50,9 @@ class Home extends Component {
               <tr key={record.className}>
                 <td>{record.className}</td>
                 <td>{record.role}</td>
+                <td>
+                    <i className="material-icons red-text right">delete</i>
+                </td>
               </tr>
             )
           })}
