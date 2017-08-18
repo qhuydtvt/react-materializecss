@@ -2,7 +2,7 @@ export default function(state = [], action) {
     return [
       {
         name: "Huỳnh Tuấn Anh",
-        image: "https://source.unsplash.com/random/300x200",
+        image: "https://source.unsplash.com/random/150x100",
         records: [
           {
             className: "C4E12",
@@ -20,7 +20,7 @@ export default function(state = [], action) {
       },
       {
         name: "Huỳnh Tuấn Huy",
-        image: "https://source.unsplash.com/collection/190727/300x200",
+        image: "https://source.unsplash.com/collection/190727/150x100",
         records: [
           {
             className: "C4E12",
@@ -38,7 +38,7 @@ export default function(state = [], action) {
       },
       {
         name: "Nguyễn Minh Tú",
-        image: "https://source.unsplash.com/collection/190726/300x200",
+        image: "https://source.unsplash.com/collection/190726/150x100",
         records: [
           {
             className: "C4E12",
@@ -74,7 +74,7 @@ export default function(state = [], action) {
       },
       {
         name: "Đặng Nguyễn Phương Trang",
-        image: "https://source.unsplash.com/user/erondu/300x200",
+        image: "https://source.unsplash.com/user/erondu/150x100",
         records: [
           {
             className: "C4E12",
