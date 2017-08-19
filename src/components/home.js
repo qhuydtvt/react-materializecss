@@ -20,7 +20,7 @@ class Home extends Component {
       <div key={index} className="col s4">
         <div className="card item-card">
           <div className="card-image">
-            <img className="responsive-img" src={item.image} alt={item.name} />
+            <img className="materialboxed responsive-img" src={item.image} alt={item.name} />
             <a onClick={(event) => this.showItem(item)} className="btn-floating btn-large halfway-fab waves-effect waves-light red" >
               <i className="material-icons item-action">fingerprint</i>
             </a>

@@ -32,22 +32,24 @@ class NewRecordDialog extends Component {
     const item = this.props.newRecordDialog.item;
 
     return (
-      <div className="row">
-        <div className="col s12">
-          <div className="input-field">
-            <label htmlFor="className">Lớp</label>
-            <input id="className" type="text" />
-          </div>
-          <p>
-            <input name="role" type="radio" id="instructor" defaultChecked />
-            <label htmlFor="instructor" >Giảng viên</label>
-          </p>
+      <div>
+        <div className="row">
+          <div className="col s12">
+            <div className="input-field">
+              <label htmlFor="className">Lớp</label>
+              <input id="className" type="text" />
+            </div>
+            <p>
+              <input name="role" type="radio" id="instructor" defaultChecked />
+              <label htmlFor="instructor" >Giảng viên</label>
+            </p>
 
-          <p>
-            <input name="role" type="radio" id="coach" />
-            <label htmlFor="coach">Trợ giảng</label>
-          </p>
-          <Flatpickr />
+            <p>
+              <input name="role" type="radio" id="coach" />
+              <label htmlFor="coach">Trợ giảng</label>
+            </p>
+            <Flatpickr />
+          </div>
         </div>
       </div>
     );
