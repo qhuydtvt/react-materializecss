@@ -12,6 +12,8 @@ export const LOAD_TOKEN_FROM_STORAGE = "load_token_from_storage";
 export const SHOW_CONFIRM_DIALOG = "show_cofirm_dialog";
 export const HIDE_CONFIRM_DIALOG = "hide_confirm_dialog"
 
+export const SEARCH_ITEMS = "search items";
+
 export const SHOW_LOGIN_WAIT_INDICATOR = "show_login_indicator";
 export const HIDE_LOGIN_WAIT_INDICATOR = "hide_login_indicator";
 
@@ -30,6 +32,13 @@ function endDate() {
   var end = new Date();
   end.setHours(23,59,59,999);
   return end;
+}
+
+export function searchItems(keyword) {
+  return {
+    type: SEARCH_ITEMS,
+    payload: keyword
+  }
 }
 
 export function login(values, callBack) {
