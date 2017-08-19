@@ -21,8 +21,8 @@ class NewRecordDialog extends Component {
   renderActions() {
     return [
       (
-        <button className="btn red waves-effect waves-light" onClick={this.props.hideDialog}>
-          <i className="material-icons">check</i>
+        <button className="btn-flat red-text waves-effect waves-light" onClick={this.props.hideDialog}>
+          Hoàn tất
         </button>
       )
     ];
