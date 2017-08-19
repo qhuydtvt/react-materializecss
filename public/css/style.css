@@ -1,13 +1,27 @@
-.nav-search-input {
+.input-search {
+  margin-bottom: 0px !important;
   border-bottom: none !important;
-  padding-left: 12px !important;
+  height: auto !important;
+  position: relative;
+  top: -5px;
 }
 
-.nav-wrapper {
-  padding-left: 10px;
-  padding-right: 100px;
+.input-search:focus {
+  border-bottom: none !important;
 }
 
-.search-icon {
-  width: 32px !important;
+.item-title {
+  font-size: 2vw !important;
+}
+
+.search-wrapper {
+  height: 50px !important;
+}
+
+.item-title-small {
+  font-size: 16px !important;
+}
+
+.card-content {
+  min-height: 120px;
 }

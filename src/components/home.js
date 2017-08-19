@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 
 class Home extends Component {
 
-  renderItem(item) {
+  renderItem(item, index) {
+    const itemTitleStyle = item.name.split(" ").length > 3 ? "" : "";
     return (
-      <div key={item.name} className="col s4">
-        <div className="card">
+      <div key={index} className="col s4">
+        <div className="card item-card">
           <div className="card-image">
             <img className="responsive-img" src={item.image} alt={item.name} />
             <a className="btn-floating btn-large halfway-fab waves-effect waves-light red" >
@@ -15,7 +16,7 @@ class Home extends Component {
           </div>
 
           <div className="card-content">
-            <span className="card-title" >{item.name}</span>
+            <span className={`card-title ${itemTitleStyle}`} >{item.name}</span>
           </div>
 
           <div className="card-action">
@@ -69,7 +70,7 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="row">
-          {this.props.items.map((item) => this.renderItem(item))}
+          {this.props.items.map((item, index) => this.renderItem(item, index))}
         </div>
       </div>
     );
