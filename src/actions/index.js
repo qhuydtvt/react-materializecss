@@ -17,6 +17,9 @@ export const SEARCH_ITEMS = "search items";
 export const SHOW_LOGIN_WAIT_INDICATOR = "show_login_indicator";
 export const HIDE_LOGIN_WAIT_INDICATOR = "hide_login_indicator";
 
+export const SHOW_DIALOG = "show dialog";
+export const HIDE_DIALOG = "hide dialog";
+
 const ROOT_URL = 'https://tk-records.herokuapp.com/api';
 const LOGIN_URL = `${ROOT_URL}/login`;
 const RECORDS_URL = `${ROOT_URL}/records`;
@@ -39,6 +42,20 @@ export function searchItems(keyword) {
     type: SEARCH_ITEMS,
     payload: keyword
   }
+}
+
+export function showDialog(item) {
+  return {
+    type: SHOW_DIALOG,
+    payload: item
+  };
+}
+
+export function hideDialog() {
+  return {
+    type: HIDE_DIALOG,
+    payload: null,
+  };
 }
 
 export function login(values, callBack) {

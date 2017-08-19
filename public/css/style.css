@@ -7,6 +7,11 @@
   font-size: 1.5rem !important;
 }
 
+.dialog-image {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .input-search:focus {
   border-bottom: none !important;
 }

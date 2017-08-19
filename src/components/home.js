@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { toast } from 'react-toastify';
+import { showDialog } from '../actions';
 
 class Home extends Component {
+
+  constructor(props) {
+    super(props);
+    this.showItem = this.showItem.bind(this);
+  }
+
+  showItem(item) {
+      this.props.showDialog(item);
+  }
 
   renderItem(item, index) {
     const itemTitleStyle = item.name.split(" ").length > 3 ? "" : "";
@@ -10,7 +21,7 @@ class Home extends Component {
         <div className="card item-card">
           <div className="card-image">
             <img className="responsive-img" src={item.image} alt={item.name} />
-            <a className="btn-floating btn-large halfway-fab waves-effect waves-light red" >
+            <a onClick={(event) => this.showItem(item)} className="btn-floating btn-large halfway-fab waves-effect waves-light red" >
               <i className="material-icons item-action">fingerprint</i>
             </a>
           </div>
@@ -81,4 +92,4 @@ function mapStateToProps({ items }) {
   return { items };
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps, {showDialog})(Home);
